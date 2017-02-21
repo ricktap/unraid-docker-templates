@@ -1,16 +1,25 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Minecraft</Name>
-  <Repository>itzg/minecraft-server</Repository>
-  <Registry>https://hub.docker.com/r/itzg/minecraft-server/</Registry>
-  <Network>bridge</Network>
-  <Privileged>false</Privileged>
-  <Support/>
-  <Overview/>
+  <Date>2017-02-21</Date>
+  <Beta>False</Beta>
   <Category>Other:</Category>
+  <Name>Minecraft</Name>
+  <Project>https://minecraft.net/</Project>
+  <Changes>
+  </Changes>
+  <Overview>
+    Dockerized version of the famous minecraft game. Including the option to install gamepacks through FTB and other Mod Packs.
+  </Overview>
+  <Description>
+    Dockerized version of the famous minecraft game. Including the option to install gamepacks through FTB and other Mod Packs.
+  </Description>
+  <Registry>https://hub.docker.com/r/itzg/minecraft-server/</Registry>
+  <Repository>itzg/minecraft-server</Repository>
+  <Privileged>false</Privileged>
+  <Network Default="bridge">bridge</Network>
+  <Support/>
   <WebUI/>
-  <TemplateURL/>
-  <Icon/>
+  <Icon>https://github.com/ricktap/unraid-docker-templates/raw/master/images/minecraft-docker.png</Icon>
   <ExtraParams/>
   <DateInstalled>1487699979</DateInstalled>
   <Description/>
