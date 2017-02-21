@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Minecraft</Name>
+  <Repository>itzg/minecraft-server</Repository>
+  <Registry>https://hub.docker.com/r/itzg/minecraft-server/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview/>
+  <Category>Other:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <DateInstalled>1487699979</DateInstalled>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>25565</HostPort>
+        <ContainerPort>25565</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/usr/appdata/minecraft-data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>FTB</Value>
+      <Name>TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>TRUE</Value>
+      <Name>EULA</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>LATEST</Value>
+      <Name>VERSION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>easy</Value>
+      <Name>DIFFICULTY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>ophasis</Value>
+      <Name>OPS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>FTBPresentsSkyfactory3Server_3.0.6.zip</Value>
+      <Name>FTB_SERVER_MOD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Host Path 1" Target="/data" Default="/mnt/usr/appdata/minecraft-data" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/usr/appdata/minecraft-data</Config>
+  <Config Name="Mod Pack" Target="TYPE" Default="VANILLA" Mode="" Description="Activate Modpacks (optional):&#13;&#10;&amp;lt;ul&amp;gt;&#13;&#10;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;VANILLA&amp;lt;/b&amp;gt; =&amp;gt; No Mod Pack&amp;lt;/li&amp;gt;&#13;&#10;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;FTB&amp;lt;/b&amp;gt; =&amp;gt; Feed the Beast&amp;lt;/li&amp;gt;&#13;&#10;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;PAPER&amp;lt;/b&amp;gt; =&amp;gt; PaperSpigot &amp;lt;/li&amp;gt;&#13;&#10;&amp;lt;/ul&amp;gt;" Type="Variable" Display="always" Required="true" Mask="false">FTB</Config>
+  <Config Name="EULA" Target="EULA" Default="TRUE" Mode="" Description="Do you accept the &amp;lt;a href='https://account.mojang.com/documents/minecraft_eula' target='_blank'&amp;gt;Mojang Eula&amp;lt;/a&amp;gt;?" Type="Variable" Display="always-hide" Required="true" Mask="false">TRUE</Config>
+  <Config Name="Version" Target="VERSION" Default="LATEST" Mode="" Description="Select a Minecraft Version:&#13;&#10;&amp;lt;ul&amp;gt;&#13;&#10;&amp;lt;li&amp;gt;LATEST&amp;lt;/li&amp;gt;&#13;&#10;&amp;lt;li&amp;gt;x.y.z (e.g. 1.7.9)&amp;lt;/li&amp;gt;&#13;&#10;&amp;lt;/ul&amp;gt;&#13;&#10;" Type="Variable" Display="always" Required="true" Mask="false">LATEST</Config>
+  <Config Name="Difficulty" Target="DIFFICULTY" Default="easy" Mode="" Description="Select a difficulty:&#13;&#10;&amp;lt;ul&amp;gt;&#13;&#10;&amp;lt;li&amp;gt;peaceful&amp;lt;/li&amp;gt;&#13;&#10;&amp;lt;li&amp;gt;easy&amp;lt;/li&amp;gt;&#13;&#10;&amp;lt;li&amp;gt;normal&amp;lt;/li&amp;gt;&#13;&#10;&amp;lt;li&amp;gt;hard&amp;lt;/li&amp;gt;&#13;&#10;&amp;lt;/ul&amp;gt;" Type="Variable" Display="always" Required="false" Mask="false">easy</Config>
+  <Config Name="Admins" Target="OPS" Default="" Mode="" Description="Define the Admins as a comma separated list (e.g. user1,user2,user3)" Type="Variable" Display="always" Required="false" Mask="false">ophasis</Config>
+  <Config Name="FTB Mod" Target="FTB_SERVER_MOD" Default="" Mode="" Description="This field ist required, if you set the Mod Pack to FTB.&#13;&#10;Upload your zip File to /data and set the value to the filename (e.g. FTBPresentsSkyfactory3Server_3.0.6.zip)." Type="Variable" Display="always" Required="false" Mask="false">FTBPresentsSkyfactory3Server_3.0.6.zip</Config>
+  <Config Name="Server Port" Target="25565" Default="25565" Mode="tcp" Description="Container Port: 25565" Type="Port" Display="advanced-hide" Required="true" Mask="false">25565</Config>
+</Container>
