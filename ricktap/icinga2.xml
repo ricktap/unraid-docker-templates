@@ -46,5 +46,21 @@
   </Data>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Environment>
+    <Variable>
+      <Name>DB_HOST</Name>
+      <Value>[IP]:3306</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_ROOT_PASSWORD</Name>
+      <Value>[IP]:3306</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_ICINGA_USER</Name>
+      <Value>icinga</Value>
+    </Variable>
+    <Variable>
+      <Name>DB_ICINGA_PASSWORD</Name>
+      <Value>password</Value>
+    </Variable>
   </Environment>
 </Containers>
