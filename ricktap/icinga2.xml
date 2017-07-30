@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Date>2017-02-21</Date>
+  <Beta>False</Beta>
+  <Category>Other:</Category>
+  <Name>Icinga 2</Name>
+  <Project>https://www.icinga.com</Project>
+  <Changes>
+  </Changes>
+  <Overview>
+    The Icinga Monitoring Tool. (Base Version plus Web Frontend)
+  </Overview>
+  <Description>
+    This Version combines the backend module (with the nagios plugins) with the web frontend. You need to have mysql running as well.
+  </Description>
+  <Registry>https://hub.docker.com/r/ricktap/icinga2/</Registry>
+  <Repository>ricktap/icinga2</Repository>
+  <Privileged>false</Privileged>
+  <Network Default="bridge">bridge</Network>
+  <Support/>
+  <WebUI/>
+  <Icon>https://github.com/ricktap/unraid-docker-templates/raw/master/images/icinga.png</Icon>
+  <ExtraParams/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7980</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/usr/appdata/icinga-config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/usr/appdata/icinga-webconfig</HostDir>
+      <ContainerDir>/webconfig</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+  </Environment>
+</Container>
