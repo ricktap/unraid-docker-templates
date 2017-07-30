@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<Container version="2">
+<Containers>
   <Date>2017-02-21</Date>
-  <Beta>False</Beta>
+  <Beta>True</Beta>
   <Category>Other:</Category>
   <Name>Icinga 2</Name>
   <Project>https://www.icinga.com</Project>
@@ -47,4 +47,4 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Environment>
   </Environment>
-</Container>
+</Containers>
