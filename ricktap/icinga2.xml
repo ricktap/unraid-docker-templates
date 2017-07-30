@@ -44,6 +44,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Environment>
   </Environment>
 </Container>
